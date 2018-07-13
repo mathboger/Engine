@@ -1,0 +1,38 @@
+﻿main.obj : error LNK2019: símbolo externo indefinido _gladLoadGLLoader referenciado na função _main
+main.obj : error LNK2019: símbolo externo indefinido _glfwInit referenciado na função _main
+main.obj : error LNK2019: símbolo externo indefinido _glfwTerminate referenciado na função _main
+main.obj : error LNK2019: símbolo externo indefinido _glfwWindowHint referenciado na função _main
+main.obj : error LNK2019: símbolo externo indefinido _glfwCreateWindow referenciado na função _main
+main.obj : error LNK2019: símbolo externo indefinido _glfwWindowShouldClose referenciado na função _main
+main.obj : error LNK2019: símbolo externo indefinido _glfwSetWindowShouldClose referenciado na função "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z)
+main.obj : error LNK2019: símbolo externo indefinido _glfwSetFramebufferSizeCallback referenciado na função _main
+main.obj : error LNK2019: símbolo externo indefinido _glfwPollEvents referenciado na função _main
+main.obj : error LNK2019: símbolo externo indefinido _glfwGetKey referenciado na função "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z)
+main.obj : error LNK2019: símbolo externo indefinido _glfwMakeContextCurrent referenciado na função _main
+main.obj : error LNK2019: símbolo externo indefinido _glfwSwapBuffers referenciado na função _main
+main.obj : error LNK2019: símbolo externo indefinido _glfwGetProcAddress referenciado na função _main
+main.obj : error LNK2001: símbolos externos indefinidos _glad_glClear
+main.obj : error LNK2001: símbolos externos indefinidos _glad_glClearColor
+main.obj : error LNK2001: símbolos externos indefinidos _glad_glViewport
+main.obj : error LNK2001: símbolos externos indefinidos _glad_glDrawArrays
+main.obj : error LNK2001: símbolos externos indefinidos _glad_glBindBuffer
+main.obj : error LNK2001: símbolos externos indefinidos _glad_glGenBuffers
+main.obj : error LNK2001: símbolos externos indefinidos _glad_glBufferData
+main.obj : error LNK2001: símbolos externos indefinidos _glad_glEnableVertexAttribArray
+main.obj : error LNK2001: símbolos externos indefinidos _glad_glVertexAttribPointer
+main.obj : error LNK2001: símbolos externos indefinidos _glad_glBindVertexArray
+main.obj : error LNK2001: símbolos externos indefinidos _glad_glGenVertexArrays
+shader.obj : error LNK2001: símbolos externos indefinidos _glad_glAttachShader
+shader.obj : error LNK2001: símbolos externos indefinidos _glad_glCompileShader
+shader.obj : error LNK2001: símbolos externos indefinidos _glad_glCreateProgram
+shader.obj : error LNK2001: símbolos externos indefinidos _glad_glCreateShader
+shader.obj : error LNK2001: símbolos externos indefinidos _glad_glDeleteShader
+shader.obj : error LNK2001: símbolos externos indefinidos _glad_glGetProgramiv
+shader.obj : error LNK2001: símbolos externos indefinidos _glad_glGetProgramInfoLog
+shader.obj : error LNK2001: símbolos externos indefinidos _glad_glGetShaderiv
+shader.obj : error LNK2001: símbolos externos indefinidos _glad_glGetShaderInfoLog
+shader.obj : error LNK2001: símbolos externos indefinidos _glad_glLinkProgram
+shader.obj : error LNK2001: símbolos externos indefinidos _glad_glShaderSource
+shader.obj : error LNK2001: símbolos externos indefinidos _glad_glUseProgram
+C:\Users\mathb\Documents\OpenGL\build\src\Debug\glfw3.lib : warning LNK4272: o tipo de máquina da biblioteca 'x64' está em conflito com o tipo de máquina de destino 'x86'
+C:\Users\mathb\source\repos\Engine\Debug\Engine.exe : fatal error LNK1120: 36 externo não resolvidos
