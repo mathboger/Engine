@@ -8,14 +8,14 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
 
 // TOO MANY OTHER MANAGERS STUFF BEING DONE
 // FIND A WAY TO INITIALIZE AND THROW ERRORS ACCORDINGLY WHEN NECESSARY
-Engine::Engine() {
+Engine::Engine(Scene *t_scene) : scene(t_scene) {
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	//glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
-	window = glfwCreateWindow(800, 600, "Learn OpenGL", NULL, NULL);
+	window = glfwCreateWindow(800, 600, scene->getName().c_str(), NULL, NULL);
 	if (window == NULL) {
 		std::cout << "Failed to create GLFW window" << std::endl;
 		glfwTerminate();

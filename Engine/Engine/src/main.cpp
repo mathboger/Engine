@@ -19,13 +19,12 @@ int main(void) {
 		0, 1, 2
 	};
 
-	Engine engine = Engine();
-	Scene scene = Scene();
+	Scene scene = Scene("Main");
+	Engine engine = Engine(&scene);
 	Actor actor = Actor();
 	Renderer renderer = Renderer("simpleVShader.vs", "simpleFShader.fs", vertices, 9, indices, 3);
-	actor.components.push_back(&renderer);
-	scene.actors.push_back(&actor);
-	engine.scene = &scene;
+	actor.addComponent(&renderer);
+	scene.addActor(&actor);
 
 	engine.run();
 

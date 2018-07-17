@@ -1,5 +1,8 @@
 #include "Component.h"
-#include<iostream>
+
+Component::Component() {
+	parent = nullptr;
+}
 
 void Component::update() {
 }
