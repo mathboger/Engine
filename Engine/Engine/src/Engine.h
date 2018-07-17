@@ -9,10 +9,10 @@ class Engine {
 
 public:
 
-	Scene *scene;
-	GLFWwindow *window;
+	Scene *scene; // The scene wich the game loads (make it a vector!)
+	GLFWwindow *window; // The window (encapsulate it with our own class!)
 
-	Engine(); // Activate managers in constructor
+	Engine(Scene *t_scene); // Activate managers in constructor
 	~Engine(); // Deactivate managers in descructor
 
 	int run(); // Run the loaded game
