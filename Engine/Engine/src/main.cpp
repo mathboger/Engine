@@ -21,12 +21,15 @@ int main(void) {
 
 	Scene scene = Scene("Main");
 	Engine engine = Engine(&scene);
+	engine.init();
+
 	Actor actor = Actor();
 	Renderer renderer = Renderer("simpleVShader.vs", "simpleFShader.fs", vertices, 9, indices, 3);
 	actor.addComponent(&renderer);
 	scene.addActor(&actor);
 
 	engine.run();
+	engine.shutdown();
 
 	return 0;
 }
