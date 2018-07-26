@@ -1,11 +1,13 @@
 #include "Actor.h"
 #include<typeinfo>
 #include "Component.h" // since it's not included by Actor.h because of forward declaration
+#include "Transform.h"
 
 unsigned int Actor::IDCount = 0;
 
 Actor::Actor() {
 	ID = IDCount++;
+	addComponent<Transform>(new Transform());
 }
 
 void Actor::update() {
@@ -18,10 +20,10 @@ unsigned int Actor::getID() {
 	return ID;
 }
 
-void Actor::addComponent(Component * component) {
+/*void Actor::addComponent(Component * component) {
 	bool canAdd = true;
 	for (std::vector<Component *>::iterator c = components.begin(); c != components.end() && canAdd == true; c++) {
-		if (typeid(*c) == typeid(component)) {
+		if (dynamic_cast<compType *>(*c) != nullptr) {
 			canAdd = false;
 		}
 	}
@@ -29,13 +31,14 @@ void Actor::addComponent(Component * component) {
 		components.push_back(component);
 		component->parent = this;
 	}
-}
+}*/
 
-template<typename compType> Component* Actor::getComponent() {
+// Function definition moved to header due to it being a template function
+/*template<typename compType> Component* Actor::getComponent() {
 	for (std::vector<Component *>::iterator c = components.begin(); c != components.end(); c++) {
-		if (typeid(*c) == compType) {
+		if (dynamic_cast<compType *>(*c) != nullptr) {
 			return *c;
 		}
 	}
 	return nullptr;
-}
+}*/
